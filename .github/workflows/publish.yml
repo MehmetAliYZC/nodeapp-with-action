@@ -29,5 +29,5 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
-          projectName: nodeapp
+          projectName: nodeapp-with-action
           directory: build

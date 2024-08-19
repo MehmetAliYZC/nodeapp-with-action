@@ -1,0 +1,13 @@
+name: hello-world
+on: push
+jobs:
+  build-react:
+    runs-on: ubuntu-latest
+    container: node:18 
+    steps:
+        - run: cd ..
+        - run: cd ./react-hello-world
+        - uses: actions/checkout@v4
+        - run: npm install
+        - run: npm run build 
+
